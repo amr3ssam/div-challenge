@@ -249,7 +249,7 @@ export const MainSidebarComponent = styled.nav`
   }
   .link{
         width: 100%;
-        height: ${props => (props.selected ? '64px': '56px')} ; 
+        height: ${props => (props.selected ? '64px' : '56px')} ; 
         flex-flow : row nowrap;
           text-decoration: none;
          margin-top : ${props => (props.setting ? "30%" : "0px")};
@@ -338,15 +338,17 @@ export const SideBarHeader = styled.div`
   }
 `;
 export const LiSideBar = styled.li`
-  width: 100%;
-        height: ${props => (props.selected ? '64px': '56px')} ; 
+  width: ${props => (props.selected ? '104%' : '100%')} ; 
+        height: ${props => (props.selected ? '64px' : '56px')} ; 
           flex-flow : row nowrap; 
-          background-color:  ${props => (props.selected ? '#2c78ff': '#ffffff')} ; 
+          background-color:  ${props => (props.selected ? '#2c78ff' : '#ffffff')} ; 
+          z-index:500;
+          margin-top: ${props => (props.setting ? '114%' : '0px')} ; 
 `;
 export const LabelSideBar = styled.label`
   width: 100%;
          width: 44%;
-        height: ${props => (props.selected ? '24px': '22px')} ; 
+        height: ${props => (props.selected ? '24px' : '22px')} ; 
         font-family: Roboto;
         font-size: 20px;
         font-weight: normal;
@@ -354,10 +356,10 @@ export const LabelSideBar = styled.label`
         font-style: normal;
         line-height: 1.1;
         letter-spacing: normal;
-        color:  ${props => (props.selected ? ' #ffffff': ' #8f9db4')} ;  
+        color:  ${props => (props.selected ? ' #ffffff' : ' #8f9db4')} ;  
         text-decoration: none;
         margin-left : 16px;
-         margin-top : ${props => (props.selected ? '20px': '17px')} ; 
+         margin-top : ${props => (props.selected ? '20px' : '17px')} ; 
 `;
 
 
@@ -366,8 +368,13 @@ export const ImgSideBar = styled.img`
          width: 24px;
        height: 24px;
        object-fit: contain;
-          margin-top: ${props => (props.selected ? '20px': '16px')} ; 
-            margin-left:32px;
-        fill:  ${props => (props.selected ? ' #ffffff': ' #8f9db4')} ; 
-        color:  ${props => (props.selected ? ' #ffffff': ' #8f9db4')} ; 
+          margin-top: ${props => (props.selected ? '20px' : '16px')} ; 
+            margin-left: ${props => (props.selected ? '37px' : '32px')} ; 
+             color:  ${props => (props.selected ? ' #ffffff' : ' #8f9db4')} ;  
+             fill:  ${props => (props.selected ? ' #ffffff' : ' #8f9db4')} ;  
+      
+`;
+export const SideBarLinkDiv = styled.div`
+ flex-flow : row nowrap;
+    display: flex;
 `;
