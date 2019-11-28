@@ -9,7 +9,7 @@ export const MainDiv = styled.div`
    display:flex;
 `;
 export const SecondDiv = styled.div`
-  width: 78.9%
+  width: 78.9%;
   height: 100%;
   background-color: #f3f5f8;
    flex-flow : column nowrap; 
@@ -86,13 +86,12 @@ export const ChartHeader = styled.div`
   box-shadow: 0 1px 0 0 rgba(194, 199, 215, 0.3);
   background-color: #ffffff;
   margin-left:1px;
-  margin-top:1%;
 `;
 export const DivTitle = styled.label`
    width: 362px;
   height: 20px;
   font-family: Roboto;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
@@ -377,4 +376,11 @@ export const ImgSideBar = styled.img`
 export const SideBarLinkDiv = styled.div`
  flex-flow : row nowrap;
     display: flex;
+`;
+
+export const BarChartDiv = styled.div`
+ position: 'relative';
+  height: '100%';
+   width: '97%';
+    padding-top: '1%';
 `;

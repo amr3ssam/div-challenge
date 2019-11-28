@@ -1,8 +1,8 @@
 import React from 'react';
-import { MainSecondaryDiv, TransactionChartDiv } from '../Style'
+import { MainSecondaryDiv } from '../Style'
 import TotalsComponent from './TotalsComponent'
 import TransactionFooterComponent from './TransactionFooterComponent'
-import ChartHeaderComponent from './ChartHeaderComponent'
+import TransactionChartComponent from './TransactionChartComponent'
 
 export default class OverviewMainPage extends React.Component {
 
@@ -10,10 +10,12 @@ export default class OverviewMainPage extends React.Component {
         return (
             <MainSecondaryDiv >
                 <TotalsComponent />
-                <TransactionChartDiv >
-                    <ChartHeaderComponent />
-                </TransactionChartDiv>
-                    <TransactionFooterComponent />
+                {/*
+                  
+                <BarChartComponent />
+                */ }
+                <TransactionChartComponent />
+                <TransactionFooterComponent />
             </MainSecondaryDiv>
         );
     }
